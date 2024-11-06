@@ -1,14 +1,17 @@
 import React, { useState } from "react";
 import Create from "../ui/Create";
 import Button from "../ui/Button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { IoIosLogIn } from "react-icons/io";
 import { PiBank } from "react-icons/pi";
+import { Navigate } from "react-router-dom";
 
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const Neelam = useNavigate();
   
 
   const emailChnage = (event) => {
@@ -21,8 +24,8 @@ const Login = () => {
 
   const submitHandler = async (event) => {
     event.preventDefault();
+    Neelam('/product');
     
-
     console.log(email, password);
   };
 
@@ -61,7 +64,7 @@ const Login = () => {
           </div>
           <div className="files-options">
             <Link to="/register">Create new account?</Link>
-            <Link to="/forget/password">Forget password</Link>
+            <Link to="/forget-password">Forget password</Link>
           </div>
         </div>
       </form>

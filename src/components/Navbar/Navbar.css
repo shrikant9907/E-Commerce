@@ -30,3 +30,11 @@ nav ul li{
     outline: 0;
     margin: 10px;
   }
+  .nav-bar-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #4b1b78;
+    color: white;
+    font-weight: bold;
+  }

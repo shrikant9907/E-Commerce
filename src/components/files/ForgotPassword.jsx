@@ -14,7 +14,7 @@ const ForgotPassword = () => {
     }
     const submitHandle = (e)=>{
         e.preventDefault()
-        navigate('/otp/verify');
+        navigate('/otp-verify');
 
     }
   return (
