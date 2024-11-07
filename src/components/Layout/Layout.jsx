@@ -10,7 +10,7 @@ const Layout = () => {
    <>
      <Navbar />
      {/* <Product /> */}
-     <main style={{height:"500px" }}>
+     <main style={{height:"800px" }}>
         <Outlet />
      </main>
      <Footer />
